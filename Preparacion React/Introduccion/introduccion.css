@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+}
+
+/*Estilos encabezado*/
+.encabezado{
+    width: 100%;
+    height: 79px;
+    background: #F2F60A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+}
+
+.encabezado--titulo{
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+}
+/*Estilos cuerpo*/
+.cuerpo{
+    margin: 10px;
+}
+.subtitulo{
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Taviraj;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.parrafo{
+    color: #000;
+    font-family: Amiko;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+li{
+    font-family: Taviraj;
+}
+
+.contenedor{
+    border-radius: 5px;
+    background: #D9D9D9;
+    width: fit-content;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.boton{
+    border-radius: 5px;
+    background: #003566;
+    color: #FFF;
+    font-family: Amiko;
+}
+
+/*Estilos pie de página*/
+.pieDePagina{
+    background: #D9D9D9;
+    height: 99px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.cuerpo{
+    margin-top: 100px;
+}
+
+.pieDePagina--icono{
+    width: 50px;
+    height: 50px;
+    position:relative;
+    left: 95%;
+    top: 15%;
+}

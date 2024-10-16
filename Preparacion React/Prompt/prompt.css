@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    background-image: url(../Iconos/fondo.jpg);
+}
+
+header{
+    background-color: #FBFF07;
+    height: fit-content;
+    padding: 1px;
+    position:relative;
+    top: 0%;
+    text-align: center;
+    box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+main{
+    margin: 0 15px 0 15px;
+}
+
+h1{
+    font-family: Open Sans;
+}
+
+h2{
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Taviraj;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+p, label{
+    font-family: Amiko;
+}
+
+div{
+    border-radius: 5px;
+    background: #D9D9D9;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 25px;
+    margin: auto;
+}
+
+button{
+    border-radius: 5px;
+    background: #11064B;
+    color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+form{
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+legend{
+    font-family: Amiko;
+    background-color: #D9D9D9;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+footer{
+    background: #D9D9D9;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.enlace--derecha{
+    position: relative;
+    left: 90%;
+}

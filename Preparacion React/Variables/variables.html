@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../Iconos/js.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Javascript para react</title>
+</head>
+<body>
+    <header>
+        <h1>Variables Javascript</h1>
+    </header>
+
+    <main>
+        <h2>¿Qué es una variable?</h2>
+        <p>Una variable es un espacio en memoria en el que se pueden almacenar datos para ser recuperados en cualquier momento que sea necesario. Además estos valores pueden ser utilizados en diferentes operaciones. En Javascript, el proceso para indicar la creación de una variable empieza por su declaración y finaliza con la asignación del valor que almacenará.</p>
+        
+        <h2>Declaración</h2>
+        <p>En el proceso de declaracó hay que tener en cuenta que alcance se ncesita para la  variable, es decir si esta solo se tendrá en cuenta en el bloque de código en el que se declaró o se tendrá en cuenta también fuera del mismo. Para este fin, se tienen las palabras clave:</p>
+        <ul>
+            <li><b>let:</b> De alcance local.</li>
+            <li><b>var:</b> De alcance global.</li>
+        </ul>
+
+        <p>Siguiente a la plabra clave que define el alcance de la variable, se pone el nombre con el que se hará referencia a la misma, hay que tener en cuenta reglas generales para el establecimieto de esta como:</p>
+        <ol>
+            <li>El nombre de la variable no debe empezar con un número o caracter esepecial.</li>
+            <li>Los nombres de las variables deben ser descriptivos de su contenido y fin.</li>
+            <li>JavaScript diferencia entre mayúsculas y minúscula, es decir hola y Hola son variables diferentes.</li>
+        </ol>
+
+        <p>Finalmente, después de la declaración y el nombre se cierra con ; la línea para indicar que allí finaliza una instrucción. Sep ueden declarar varias variables en una sola línea separandolas por comas.</p>
+        <div>
+            <code>
+                let variableLocal;<br>
+                var variableGlobal;<br>
+                let variable1, variable2;
+            </code>
+        </div>
+
+        <p>Adicionalmente, en JavaScript se puede inicializar una variable con la palabra const, esto para indicar que será constante y su valor no cambiará una ves le sea asignado por primera vez.</p>
+        <div>
+            <code>
+                const variableConstante;
+            </code>
+        </div>
+
+        <h2>Asignación</h2>
+        <p>La asignación se refiera a la acción de indicar qué valor se alojará en la variable. Esto se logra mediante el uso del signo igual (=), seguido del valor indicado. Una varible puede se le puede aignar un valor en la misma línea en la que se declara.</p>
+        <div>
+            <code>
+                let variableLocal = 1;<br>
+                var variableGlobal = “Hola”;
+            </code>
+        </div>
+
+        <h2>Tipos de dato</h2>
+        <p>Los valores que se pueden guardar en una variable pueden ser de diferente naturaleza.</p>
+        <ul>
+            <li><b>Números:</b> Dentro de las variables se pueden consignar números, estos pueden ser enteros como 30 o 15. También se pueden guardar números decimales  
+            </li>
+            <li><b>Cadenas:</b> Son el tipo de datos que s utiliza para guradar texto en la variable, estas se indican usando comilas “”.</li>
+            <li><b>Booleanos:</b> Los booleanos, son tipos de datos de solo dos valores posibles, true (verdadero) o false (falso), estos son útiles en estructuras de control.</li>
+            <li><b>Arreglos:</b> Los arreglos son elementos que pueden almacenar un conjunto de valores, se notan con el uso de [] y los valores en su interior se separan con coma.</li>
+            <li><b>Objetos:</b> Son elementos que son representaciones de objetos de la vida real en código, estos se notan con {} y en su interior, se encuentran sus atributos y métodos.</li>
+        </ul>
+
+        <h2>Tipado dinámico</h2>
+        <p>Es una de las caraterísticas de JavaScript y de varios lenguajes de programación, de poder almacenar valores de diferentes tipos a lo largo de la ejecución del programa. Además, esto implica que al declarar la variable no sea necesario indicar el tipo de dato de los valores que va a almacenar. Con la función typeof() se puede obtener el tipo de dato del valor que tiene alojado la varible en ese momento. </p>
+        <div>
+            <code>
+                let variable = “cadena”;<br>
+                typeof(variable);
+            </code>
+        </div>
+        <button onclick="alert(typeof('Hola'))">
+            Presione para ver el tipo de dato
+        </button>
+    </main>
+
+    <footer>
+        <a href="../Introduccion/index.html" title="Introducción">
+            <img src="../Iconos/previous.png" alt="Volver">
+        </a>
+        <a href="../Prompt/prompt.html" class="enlace--derecha">
+            <img src="../Iconos/next.png" alt="Siguiente">
+        </a>
+    </footer>
+</body>
+</html>
