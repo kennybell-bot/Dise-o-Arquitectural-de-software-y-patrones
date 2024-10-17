@@ -52,62 +52,260 @@
                 </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>*=: este operador multiplica la variable por un número y aloja el resultado en la misma variable.</p>
+                <div>
+                    <code>let x*=y</code>
+                </div>
+            </li> 
+            <li>
+                <p>/=: Realiza lo mismo que los operadores anteriores pero este divide el por el valor que se le indique.</p>
+                <div>
+                    <code>/=: Realiza lo mismo que los operadores anteriores pero este divide el por el valor que se le indique.</code>
+                </div>
             </li>
             <li>
                 <p></p>
                 <div><code></code></div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>%=: Este operador divide pero consigna en la variable el residuo de dicha división.</p>
+                <div>
+                    <code>let x%=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>**=: Este operador aloja en la variable el resultado de elevarla al número que se le indique.</p>
+                <div>
+                    <code>let x**=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>&lt;&lt;=: Opera a nivel binario, lo que hace es asignarle a la variable el valor resultante de mover un bit a la derecha la representación binaria de lo que había alojado antes.</p>
+                <div>
+                    <code>let x&lt;&lt;=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>&gt;&gt;=: Hace lo mismo pero esta vez el desplazamiento de bits es hacia la izquierda.</p>
+                <div>
+                    <code>let x&gt;&gt;=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>&gt;&gt;&gt;=: este operador hace los mismo que los anteriores, sin embargo este desplaza los bits un número específicado de posiciones y además no conserva el bit del signo.</p>
+                <div>
+                    <code>let x&gt;&gt;&gt;=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>&=: este operador indica que en la variable se alojara el resultado de aplicar una operación AND bit por bit.</p>
+                <div>
+                    <code>let x&=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>^=: Este es un XOR bit a bit.</p>
+                <div>
+                    <code>let x^=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>|=: OR bit a bit.</p>
+                <div>
+                    <code>let x|=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>&&=: Esta es la asignación de un AND lógico</p>
+                <div>
+                    <code>let x&&=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
+                <p>??=: Este operador sirve para asignarle un valor a la variable únicamente si esta tiene como valor null.</p>
+                <div>
+                    <code>let x??=y</code>
+                </div>
             </li>
             <li>
-                <p></p>
-                <div><code></code></div>
-            </li>
-            <li>
-                <p></p>
-                <div><code></code></div>
+                <p>Desestructuración: Es una forma de asignarle valores de un arreglo o un objeto a un conjunto de variables, tiene una nortación similar a los arreglos.</p>
+                <div>
+                    <code>var foo = ["one", "two", "three"];<br>
+                        var [one, two, three] = foo;</code>
+                </div>
             </li>
         </ul>
+
+        <h2>Comparación</h2>
+        <p>Estos son operadores que permiten realizar la comparación entre dos datos y devuelven un valor booleano (true o false) dependiendo del valor de los datos. Estos dentro de su labor, realizan una conversión de los datos, en el caso de que estos sean de tipos diferentes, para poder retornar un resultado de la operación.</p>
+        <ul>
+            <li>
+                <p>==: Sirve para comparar si dos datos son iguales.</p>
+                <div>
+                    <code>x==y</code>
+                </div>
+            </li>
+            <li>
+                <p>!=: Sirve para establecer si dos datos son diferentes.</p>
+                <div>
+                    <code>x!=y</code>
+                </div>
+            </li>
+            <li>
+                <p>&gt;: Sirve para averiguar si un valor es mayor que otro.</p>
+                <div>
+                    <code>x&gt;y</code>
+                </div>
+            </li>
+            <li>
+                <p>&gt;=: Sirve para averiguar si un valor es mayor o igual que otro.</p>
+                <div><code>x&gt;=y</code></div>
+            </li>
+            <li>
+                <p>&lt;: Sirve para establecer si un valor es menor que otro.</p>
+                <div><code>x&lt;y</code></div>
+            </li>
+            <li>
+                <p>&lt;=: Sirve para establecer si un valor es menor o igual que otro</p>
+                <div><code>x&lt;=y</code></div>
+            </li>
+        </ul>
+        <p>Sin embargo, hay ciertos operadores que no realizan esta conversión y son los siguientes:</p>
+        <ul>
+            <li>
+                <p>===: Sirve para comparar si dos datos son estrictamente iguales.</p>
+                <div><code>x===y</code></div>
+            </li>
+            <li>
+                <p>!==: Sirve para establecer si dos datos son estrictamente diferentes.</p>
+                <div><code>x!==y</code></div>
+            </li>
+        </ul>
+
+        <h2>Aritméticos</h2>
+        <p>Son los operadores que permiten hacer las conocidas operaciones entre números (suma, resta, multiplicación y división) y otras operaciones menos conocidas</p>
+        <ul>
+            <li>
+                <p>+: Sirve para sumar dos números.</p>
+                <div><code>x+y</code></div>
+            </li>
+            <li>
+                <p>-: Sirve pra hacer la resta de dos números.</p>
+                <div><code>x-y</code></div>
+            </li>
+
+            <li>
+                <p>*: Sirve para hacer la multiplicación de dos números</p>
+                <div><code>x*y</code></div>
+            </li>
+            <li>
+                <p>/: sirve para hacer la división de dos números.</p>
+                <div><code>x/y</code></div>
+            </li>
+            <li>
+                <p>%: LLamada módulo, da como resultado el residuo de la división entre dos números.</p>
+                <div><code>x%y</code></div>
+            </li>
+            <li>
+                <p>++: Sirve para incrementar en uno el valor de un número</p>
+                <div><code>x++</code></div>
+            </li>
+            <li>
+                <p>**: Sirve para elevvar un número a una determinada potencia.</p>
+                <div><code>x**y</code></div>
+            </li>
+            <li>
+                <p>--: Decrementa en uno el valor de un número.</p>
+                <div><code>x--</code></div>
+            </li>
+            <li>
+                <p>+:  Sirve para volver positivo un número</p>
+                <div><code>+x</code></div>
+            </li>
+            <li>
+                <p>-: Sirve para volver negativo un número</p>
+                <div><code>-x</code></div>
+            </li>
+        </ul>
+
+        <h2>Bit a bit</h2>
+        <p>Estos son los operadores que trabajan con los valores en binario.</p>
+        <ul>
+            <li>
+                <p>&: reliza la operación AND bit por bit.</p>
+                <div><code>x&y</code></div>
+            </li>
+            <li>
+                <p>|: Realiza una operación OR bit por bit.</p>
+                <div><code>x|y</code></div>
+            </li>
+            <li>
+                <p>^: Realiza la operación XOR bit por bit.</p>
+                <div><code>x^y</code></div>
+            </li>
+            <li>
+                <p>~: Realiza la negacionbit por bit</p>
+                <div><code>~x</code></div>
+            </li>
+            <li>
+                <p>&gt;: Realiza el desplazamiendo de una determinaada cantidad de  bits a la derecha del valor binario</p>
+                <div><code>x&gt;&gt;y</code></div>
+            </li>
+            <li>
+                <p>&lt;&lt;: Realiza le corrimiento pero a la izquierda</p>
+                <div><code>x&lt;&lt;y</code></div>
+            </li>
+            <li>
+                <p>&gt;&gt;&gt;: Realiza el desplazamiendo de los bits sin conservar el bit del signo</p>
+                <div><code>x&gt;&gt;&gt;y</code></div>
+            </li>
+        </ul>
+
+        <h2>Lógicos</h2>
+        <p>Estos operadores manejan las operaciones logicas con valore booleanos</p>
+        <ul>
+            <li>
+                <p>&&: Realiza la operación AND lógica</p>
+                <div><code>x&&y</code></div>
+            </li>
+            <li>
+                <p>||: Operación OR lógica</p>
+                <div><code>x||y</code></div>
+            </li>
+            <li>
+                <p>!: Negación lógica, operación NOT</p>
+                <div><code>!x</code></div>
+            </li>
+        </ul>
+
+        <h2>Cadenas</h2>
+        <p>Los operadores de cadenas, son principalmente para la concatenación (unir dos cadenas).</p>
+        <ul>
+            <li>
+                <p>+: Concatena dos cadenas</p>
+                <div><code>x+y</code></div>
+            </li>
+            <li>
+                <p>+=: Otra forma de concatenar cadenas</p>
+                <div><code>x+=y</code></div>
+            </li>
+        </ul>
+
+        <h2>Condicional ternario</h2>
+        <p>Este condicional tiene tres partes:</p>
+        <ul>
+            <li><p>Condición.</p></li>
+            <li><p>Valor 1: Que es el que retornará si la condición es verdadera.</p></li>
+            <li><p>Valor 2: Se retorna si la condición es falsa.</p></li>
+        </ul>
+        <div><code>condición ? valor1 : valor2</code></div>
     </main>
+
+    <footer>
+        <a href="../Prompt/prompt.html">
+            <img src="../Iconos/previous.png" alt="Anterior">
+        </a>
+        <a href="" class="enlace--derecha"><img src="../Iconos/next.png" alt="Siguiente"></a>
+    </footer>
 </body>
 </html>
