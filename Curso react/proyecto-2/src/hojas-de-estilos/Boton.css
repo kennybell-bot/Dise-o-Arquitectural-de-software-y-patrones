@@ -1,0 +1,25 @@
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton1{
+    width: 20%;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: Lato, sans-serif;
+    padding: 10px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.boton2{
+    width: 20%;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: Lato, sans-serif;
+    padding: 10px;
+    background-color: rgb(255, 77, 0);
+    cursor: pointer;
+}
