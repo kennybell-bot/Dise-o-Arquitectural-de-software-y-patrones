@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Prompt/prompt.css">
+    <link rel="icon" href="../Iconos/js.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Javascript para react</title>
+</head>
+<body>
+    <header>
+        <h1>Condicionales</h1>
+    </header>
+
+    <main>
+        <p>Los condicionales son estructuras que nos permiten elegir que fragmento de código ejecutar, tomando como referencia el valor de verdad (booleano) de una condición, construida con el uso de operadores lógicos y/o de comparación.</p>
+
+        <h2>Estructura if(){}...else{}</h2>
+        <p>Esta estructura se compone de la palabra clave “if” seguida de la condición que se desea establecer para la ejecución del código, esta se coloca dentro de parentesis. Seguido a ello va el fragmento de código que se ejecuta si la condición es verdadera, este se coloca entre llaves. Posteriormente se encuentra la palabra clave else, seguida del código que se ejecuta si la condición definida es falsa, este último código también va entre llaves.</p>
+        <div>
+            <code>
+                if(texto==”if”){
+                    <blockquote>alert(“Se ejecutó el primer fragmento de código”);</blockquote>
+                }else{
+                    <blockquote>alert(“Se ejecutó el último fragmento de código”);</blockquote>
+                }
+            </code>
+        </div>
+        <button onclick="var texto = prompt('Ingrese la palabra');
+        if(texto=='if'){
+            alert('Se ejecutó el primer fragmento de código');
+        }else{
+            alert('Se ejecutó el último fragmento de código');
+        }
+        ">Presione para ver</button>
+
+        <h2>else if()</h2>
+        <p>Esta expresión permite encadenar varias condiciones antes de cerrar el condicional. Estas expresiones se colocan una a continuación de la otra, las veces que sea necesario y con las condiciones que requiera cada una en sus respectivos parentesis.</p>
+        <div>
+            <code>
+                if(texto==”if”){
+                    <blockquote>alert(“Se ejecutó el primer fragmento de código”);</blockquote>
+                }else if(texto==”elseif”){
+                    <blockquote>alert(“Se ejecutó el código del else if”);</blockquote>
+                }else{
+                    <blockquote>alert(“Se ejecutó el último fragmento de código”);</blockquote>
+                }
+            </code>
+        </div>
+        <button onclick="
+        var texto = prompt('Ingrese la palabra');
+        if(texto=='if'){
+            alert('Se ejecutó el primer fragmento de código');
+        }else if(texto=='elseif'){
+            alert('Se ejecutó el código del else if')
+        }else{
+            alert('Se ejecutó el último fragmento de código');
+        }
+        ">Presione para ver</button>
+
+        <h2>Anidación</h2>
+        <p>La anidacion de los condicionales consiste en poner un condicional en el fragmento de código de otro</p>
+        <div>
+            <code>
+                if(texto==”if”){
+                    <blockquote>
+                        if(texto==”if”){
+                            <blockquote>alert(“Se ejecutó el condicional anidado”);</blockquote>
+                        }
+                    </blockquote>
+                }else{
+                    <blockquote>alert(“Se ejecutó el último fragmento de código”);</blockquote>
+                }
+            </code>
+        </div>
+        <button onclick="
+        var texto = prompt('Ingrese la palabra');
+        if(texto=='if'){
+            if(texto=='if'){
+                alert('Se ejecutó el condicional anidado');
+            }
+        }else{
+                alert('Se ejecutó el último fragmento de código');
+        }
+        ">Presione para ver</button>
+
+        <h2>Switch</h2>
+        <p>Es una estructura condicional, esta se compone de la palabra clave switch seguida de la variable o expresion que se desea comparar entre parentesis. Posteriormente, entre llaves, se utiliza la plabra clave case seguida del valor con el que queremos comparar la expresion o variable del principio, despues de dosp untos (:), en una linea nueva y con identación, se pone el código que se ejecutará si la expresión coincide con el valor del case. Para finalizar se pone la línea “break;” para indicar que ya se puede salir de la estructura condicional sin necesidad de revisar las otras estructuras case. Como cierre de la estructura switch, se tiene la palabra clave “default”, que es la que contiene el código que se ejecuta si la variable o expresión no coincide con ninguno de los valores definidos en las estructuras case.</p>
+        <div>
+            <code>
+            switch(variable){
+                <blockquote>
+                case “1”;
+                    <blockquote>
+                        alert(“Se ejecutó el primer case”);
+                        break;
+                    </blockquote>
+                case “2”:
+                    <blockquote>                    
+                        alert(“Se ejecutó el segundo case”);
+                        break;
+                    </blockquote>
+                default;
+                    <blockquote>
+                        alert(“Se ejecutó el default”)
+                    </blockquote>
+                </blockquote>
+            }
+            </code>
+        </div>
+        <button
+        onclick="
+        var variable = prompt('Ingrese el valor');
+        switch(variable){
+            case '1':
+                alert('Se ejecutó el primer case');
+                break;
+            case '2':
+                alert('Se ejecutó el segundo case');
+                break;
+            default:
+                alert('Se ejecutó el default')
+        }
+        "
+        >Presione para ver</button>
+
+        <h2>Operador ternario</h2>
+        <p>Esta esctructura permite retornar un valor si la condición establecida es true y otro si es false. Esta se compone de la condición, seguida del signo de interrogación, posteriormente se diligencia el valor que se retorna si la condición es verdadera, a continuación se colocan dos puntos (:) y finalmente se coloca el valor que se obtendra si l;a copndicion es falsa.</p>
+        <div>
+            <code>
+                variable == “ternario” ? alert(“Es verdad”) : alert(“es falso”);
+            </code>
+        </div>
+        <button
+        onclick="var variable = prompt('Escriba el valor');
+        variable == 'ternario' ? alert('Es verdad') : alert('es falso');
+        "
+        >Presione para ver</button>
+    </main>
+
+    <footer>
+        <a href="../Concatenacion/concatenacion.html">
+            <img src="../Iconos/previous.png" alt="Anterior">
+        </a>
+        <a href="../Condicionales/condicionales.html" class="enlace--derecha"><img src="../Iconos/next.png" alt="Siguiente"></a>
+    </footer>
+</body>
+</html>
